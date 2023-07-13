@@ -22,7 +22,7 @@ public class Vehicle {
     }
 }
 
-public class Car extends Vehicle {
+class Car extends Vehicle {
     public Car(int maxSpeed, String type) {
         super(maxSpeed, type);
     }
@@ -33,7 +33,7 @@ public class Car extends Vehicle {
     }
 }
 
-public class Bus extends Vehicle {
+class Bus extends Vehicle {
     public Bus(int maxSpeed, String type) {
         super(maxSpeed, type);
     }
