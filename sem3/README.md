@@ -1,18 +1,10 @@
-## Getting Started
+SOLID
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1) Спроектировать абстрактный класс «Car» у которого должны быть свойства: марка, модель, цвет, тип кузова, число колёс, тип топлива, тип коробки передач, объём двигателя; методы: движение, обслуживание, переключение передач, включение фар, включение дворников.
+2) Создать конкретный автомобиль путём наследования класса «Car».
+3) Создать интерфейс «Заправочная станция», создать метод: заправка топливом.
+4) Имплементировать метод интерфейса «Заправочная станция» в конкретный класс «Car».
+5) Создать путём наследования класса «Car» два автомобиля: с бензиновым и дизельным двигателями, имплементировать метод «Заправка топливом» интерфейса «Заправочная станция». Реализовать заправку каждого автомобиля подходящим топливом.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+По разработанному коду нарисовать UML диаграмму.
+Диаграмму можно нарисовать на ресурсе:https://online.visual-paradigm.com/login.jsp?t=diagrams
