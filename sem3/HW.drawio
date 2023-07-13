@@ -1,0 +1,109 @@
+<mxfile host="65bd71144e">
+    <diagram name="Страница 1" id="BB3dlJd8Uc_UAgKnTeX9">
+        <mxGraphModel dx="347" dy="385" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-1" value="Car" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="285" y="180" width="200" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-2" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; brand: String&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; model: String&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; color: String&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; bodyType: String&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - numberOfWheels: int&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - fuelType: String&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - earboxType: String&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; - engineCapacityL: float&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sJdypojk-CsNtiqk3Eg9-1" vertex="1">
+                    <mxGeometry x="10" y="30" width="160" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-4" value="&lt;div&gt;+ abstract driving(): void&lt;/div&gt;&lt;div&gt;+ abstract service(): void&lt;/div&gt;&lt;div&gt;+ abstract gearShift(): void&lt;/div&gt;&lt;div&gt;+ abstract headlightsOn(): void&lt;/div&gt;&lt;div&gt;+ abstract turningOnWipers():void&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="sJdypojk-CsNtiqk3Eg9-1" vertex="1">
+                    <mxGeometry x="10" y="160" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-3" value="" style="endArrow=none;html=1;rounded=0;" parent="sJdypojk-CsNtiqk3Eg9-1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="180" as="sourcePoint"/>
+                        <mxPoint x="200" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-6" value="&amp;lt;&amp;lt;interfaca&amp;gt;&amp;gt;&lt;br&gt;iGasStation" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="315" y="940" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-7" value="- refueling: void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="sJdypojk-CsNtiqk3Eg9-6" vertex="1">
+                    <mxGeometry y="30" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-10" value="Volga" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="520" width="170" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-11" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ refueling: void&lt;/div&gt;&lt;div&gt;+ driving: void&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ service:void&lt;/div&gt;&lt;div&gt;+ gearShift: void&lt;/div&gt;&lt;div&gt;+ headlightsOn: void&lt;/div&gt;&lt;div&gt;+ turningOnWipers: void&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="sJdypojk-CsNtiqk3Eg9-10" vertex="1">
+                    <mxGeometry y="30" width="170" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-22" value="" style="endArrow=none;html=1;rounded=0;exitX=0.006;exitY=0.151;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.005;entryY=0.146;entryDx=0;entryDy=0;entryPerimeter=0;" parent="sJdypojk-CsNtiqk3Eg9-10" source="sJdypojk-CsNtiqk3Eg9-11" target="sJdypojk-CsNtiqk3Eg9-11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="80" y="180" as="sourcePoint"/>
+                        <mxPoint x="130" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-14" value="BMW" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="520" width="190" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-15" value="&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; brand: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; model: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; color: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; bodyType: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - numberOfWheels: int&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - fuelType: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - earboxType: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - engineCapacityL: float&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="sJdypojk-CsNtiqk3Eg9-14" vertex="1">
+                    <mxGeometry y="30" width="190" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-16" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract driving(): void&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract service(): void&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract gearShift(): void&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract headlightsOn(): void&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract turningOnWipers():void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="sJdypojk-CsNtiqk3Eg9-14" vertex="1">
+                    <mxGeometry y="160" width="190" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-23" value="" style="endArrow=none;html=1;rounded=0;entryX=0.985;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.005;exitY=-0.012;exitDx=0;exitDy=0;exitPerimeter=0;" parent="sJdypojk-CsNtiqk3Eg9-14" source="sJdypojk-CsNtiqk3Eg9-16" target="sJdypojk-CsNtiqk3Eg9-16" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-60" y="170" as="sourcePoint"/>
+                        <mxPoint x="-30" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-18" value="Mersedes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="520" width="190" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-19" value="&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; brand: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; model: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; color: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; bodyType: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - numberOfWheels: int&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - fuelType: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - earboxType: String&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; - engineCapacityL: float&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="sJdypojk-CsNtiqk3Eg9-18" vertex="1">
+                    <mxGeometry y="30" width="190" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-20" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract driving(): void&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract service(): void&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract gearShift(): void&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract headlightsOn(): void&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ abstract turningOnWipers():void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="sJdypojk-CsNtiqk3Eg9-18" vertex="1">
+                    <mxGeometry y="160" width="190" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-25" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.003;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;" parent="sJdypojk-CsNtiqk3Eg9-18" source="sJdypojk-CsNtiqk3Eg9-20" target="sJdypojk-CsNtiqk3Eg9-19" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-50" y="150" as="sourcePoint"/>
+                        <mxPoint y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="sJdypojk-CsNtiqk3Eg9-10" target="sJdypojk-CsNtiqk3Eg9-1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="530" as="sourcePoint"/>
+                        <mxPoint x="440" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="sJdypojk-CsNtiqk3Eg9-4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="520" as="sourcePoint"/>
+                        <mxPoint x="440" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.968;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.544;exitY=-0.013;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sJdypojk-CsNtiqk3Eg9-18" target="sJdypojk-CsNtiqk3Eg9-4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="530" as="sourcePoint"/>
+                        <mxPoint x="440" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-32" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="sJdypojk-CsNtiqk3Eg9-6" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="10" y="830" as="sourcePoint"/>
+                        <mxPoint x="140" y="710" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-34" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="sJdypojk-CsNtiqk3Eg9-6" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="340" y="720" as="sourcePoint"/>
+                        <mxPoint x="620" y="800" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sJdypojk-CsNtiqk3Eg9-35" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.507;entryY=1.035;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="sJdypojk-CsNtiqk3Eg9-6" target="sJdypojk-CsNtiqk3Eg9-16" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="350" y="920" as="sourcePoint"/>
+                        <mxPoint x="500" y="720" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
