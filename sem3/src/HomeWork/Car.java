@@ -7,15 +7,9 @@ public abstract class Car {
     private String bodyType;
     private int numberOfWheels;
     private String fuelType;
-    private  String earboxType;
+    private String gearboxType;
     private float engineCapacity;
     
-    /**
-     * пустой конструктор для класса Volga
-     */
-    public Car() {
-    }
-
     /**
      * конструктор
      * @param brand          - марка
@@ -23,22 +17,29 @@ public abstract class Car {
      * @param color          - цвет
      * @param bodyType       - тип кузова
      * @param numberOfWheels - кол-во колес
-     * @param fuelType       - тип топлива
      * @param earboxType     - тип КПП
      * @param engineCapacity - обьем двигателя
      */
+
+    
+
     public Car(String brand, String model, String color, String bodyType, int numberOfWheels,
-            String earboxType, float engineCapacity) {
+            String gearboxType, float engineCapacity) {
         this.brand = brand;
         this.model = model;
         this.color = color;
         this.bodyType = bodyType;
         this.numberOfWheels = numberOfWheels;
-        this.earboxType = earboxType;
+        this.gearboxType = gearboxType;
         this.engineCapacity = engineCapacity;
     }
 
-    
+    /**
+     * пустой конструктор для класса Volga
+     */
+    public Car() {
+    }
+
     
     public abstract void driving();
     public abstract void service();
@@ -99,11 +100,11 @@ public abstract class Car {
     }
 
     public String getEarboxType() {
-        return earboxType;
+        return gearboxType;
     }
 
-    public void setEarboxType(String earboxType) {
-        this.earboxType = earboxType;
+    public void setGearboxType(String gearboxType) {
+        this.gearboxType = gearboxType;
     }
 
     public float getEngineCapacity() {
@@ -113,5 +114,7 @@ public abstract class Car {
     public void setEngineCapacity(float engineCapacity) {
         this.engineCapacity = engineCapacity;
     }
+
+    
     
 }

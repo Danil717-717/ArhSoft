@@ -39,7 +39,6 @@ public class BMW extends Car implements iGasStation{
 
     private iGasStation iGasStation;
     private String fuelType;
-
     
      /**
       * 
@@ -52,10 +51,10 @@ public class BMW extends Car implements iGasStation{
       * @param engineCapacity  - обьем двигателя
       * 
       */   
-    public BMW(String brand, String model, String color, String bodyType, int numberOfWheels,
-            String earboxType, float engineCapacity) {
+      public BMW(String brand, String model, String color, String bodyType, int numberOfWheels,
+      String earboxType, float engineCapacity) {
         super(brand, model, color, bodyType, numberOfWheels, earboxType, engineCapacity);
-        this.iGasStation = new Dieselfuel();
+        this.iGasStation = new Gasolinefuel();
         this.fuelType = "diesel";
     }
 
