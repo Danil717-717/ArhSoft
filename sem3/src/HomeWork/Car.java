@@ -1,6 +1,11 @@
 package HomeWork;
 
+/**
+ * абстрактный класс Car
+ */
 public abstract class Car {
+    
+    
     private String brand;
     private String model;
     private String color;
@@ -21,8 +26,6 @@ public abstract class Car {
      * @param engineCapacity - обьем двигателя
      */
 
-    
-
     public Car(String brand, String model, String color, String bodyType, int numberOfWheels,
             String gearboxType, float engineCapacity) {
         this.brand = brand;
@@ -35,7 +38,7 @@ public abstract class Car {
     }
 
     /**
-     * пустой конструктор для класса Volga
+     * пустой конструктор для класса ConceptCar
      */
     public Car() {
     }

@@ -7,5 +7,5 @@ public interface iGasStation {
     /**
      * метод заправки
      */
-    default void refueling(){};
+    public void refueling();
 }

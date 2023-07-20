@@ -1,46 +1,15 @@
 package HomeWork;
 
+
 /**
  * класс наследник абстрактного класса Car
  */
-public class BMW extends Car implements iGasStation{
-
-    //private String brand;
-    //private String model;
-    //private String color;
-    //private String bodyType;
-    //private int numberOfWheels;
-    //private String fuelType;
-    //private String earboxType;
-    //private float engineCapacity;
-
-    ///**
-    // * конструктор
-    // * @param brand          - марка
-    // * @param model          - модель
-    // * @param color          - цвет
-    // * @param bodyType       - тип кузова
-    // * @param numberOfWheels - кол-во колес
-    // * @param fuelType       - тип топлива
-    // * @param earboxType     - тип КПП
-    // * @param engineCapacity - обьем двигателя
-    // */
-    //public BMW(String brand, String model, String color, String bodyType, int numberOfWheels, String fuelType,
-    //        String earboxType, float engineCapacity) {
-    //    this.brand = brand;
-    //    this.model = model;
-    //    this.color = color;
-    //    this.bodyType = bodyType;
-    //    this.numberOfWheels = numberOfWheels;
-    //    this.fuelType = fuelType;
-    //    this.earboxType = earboxType;
-    //    this.engineCapacity = engineCapacity;
-    //}
+public class Sedan extends Car implements iGasStation{
 
     private iGasStation iGasStation;
     private String fuelType;
-    
-     /**
+
+    /**
       * 
       * @param brand           - марка
       * @param model           - модель
@@ -51,12 +20,14 @@ public class BMW extends Car implements iGasStation{
       * @param engineCapacity  - обьем двигателя
       * 
       */   
-      public BMW(String brand, String model, String color, String bodyType, int numberOfWheels,
+      public Sedan(String brand, String model, String color, String bodyType, int numberOfWheels,
       String earboxType, float engineCapacity) {
         super(brand, model, color, bodyType, numberOfWheels, earboxType, engineCapacity);
         this.iGasStation = new Gasolinefuel();
-        this.fuelType = "diesel";
+        this.fuelType = "gasoline";
     }
+
+    
 
     /**
      * реализация абстрактных методов родительского класса
@@ -66,7 +37,7 @@ public class BMW extends Car implements iGasStation{
      */
     @Override
     public void driving() {
-        System.out.println("Поехали! Черный дым...");
+        System.out.println("Поехали! ");
     }
 
     /**
@@ -77,7 +48,7 @@ public class BMW extends Car implements iGasStation{
         System.out.println("Пора заехать в сервис");
     }
 
-    /**
+     /**
      * метод переключение передачи
      */
     @Override
@@ -85,7 +56,7 @@ public class BMW extends Car implements iGasStation{
         System.out.println("Переключение");
     }
 
-    /**
+     /**
      * метод включения фар
      */
     @Override
@@ -100,13 +71,17 @@ public class BMW extends Car implements iGasStation{
     public void turningOnWipers() {
         System.out.println("Дворники вжух");
     }
-    
+
     /**
      * реализация метода interface
      */
     @Override
     public void refueling(){
         iGasStation.refueling();
-        System.out.println("BMW refueling: " + fuelType);
+        System.out.println("Mersedes refueling: " + fuelType);
     }
+    
 }
+
+    
+

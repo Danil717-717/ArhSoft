@@ -5,7 +5,7 @@ package HomeWork;
  * класса Car и имплементирующий interface
  * iGasStation
  */
-public class Volga extends Car implements iGasStation{
+public class ConceptCar extends Car implements iGasStation{
     
     @Override
     public void refueling(){

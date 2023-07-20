@@ -1,18 +1,19 @@
 import DIP.DieselEngine;
-import HomeWork.BMW;
+import HomeWork.Suv;
 import HomeWork.Gasolinefuel;
-import HomeWork.Mersedes;
-import HomeWork.Volga;
+import HomeWork.Sedan;
+import HomeWork.ConceptCar;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Volga volga = new Volga();
+        ConceptCar volga = new ConceptCar();
         volga.refueling();
         DieselEngine dieselEngine= new DieselEngine();
         Gasolinefuel gasolinefuel = new Gasolinefuel();
 
-        BMW bmw = new BMW("BMW", "740", "black", "sedan", 4, "automatic", (float) 4.0);
-        Mersedes mers = new Mersedes("Mersedes", "CLS", "black", "sedan", 4, "automatic", (float) 4.5);
+        Suv bmw = new Suv("BMW", "X7", "black", "SUV", 4, "automatic", (float) 4.0);
+        
+        Sedan mers = new Sedan("Mersedes", "CLS", "black", "sedan", 4, dieselEngine, "automatic", (float) 4.5);
 
         bmw.driving();
         mers.driving();
