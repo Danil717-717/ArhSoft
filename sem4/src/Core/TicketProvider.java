@@ -37,17 +37,18 @@ public class TicketProvider {
      */
     
     public List<Ticket> getTickets(int routeNumber) throws RuntimeException {
-        List<Ticket> tickets = new ArrayList<>();
-        List<Ticket> routeTickets = new ArrayList<>();
-        for (Ticket ticket : tickets) {
-            if (ticket.getRouteNumber() == routeNumber && ticket.isValid() == true) {
-                routeTickets.add(ticket);
-            }
-        }
-        if (routeTickets.isEmpty()) {
-            throw new RuntimeException("There are no tickets for this bus.");
-        }
-        return tickets;
+        //List<Ticket> tickets = new ArrayList<>();
+        //List<Ticket> routeTickets = new ArrayList<>();
+        //for (Ticket ticket : tickets) {
+        //    if (ticket.getRouteNumber() == routeNumber && ticket.isValid() == true) {
+        //        routeTickets.add(ticket);
+        //    }
+        //}
+        //if (routeTickets.isEmpty()) {
+        //    throw new RuntimeException("There are no tickets for this bus.");
+        //}
+        //return tickets;
+        return ticketRepo.readAll(routeNumber);
     }
 
 

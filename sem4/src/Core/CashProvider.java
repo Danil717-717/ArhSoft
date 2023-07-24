@@ -43,13 +43,14 @@ public class CashProvider {
     // подсказка  Carrier carrier = carrierRepository.read(1);
     // подсказка  return cashRepository.transaction(ticket.getPrice(), cardNumber, carrier.getCardNumber());
     public boolean buy(Ticket ticket) throws RuntimeException {
-        if(ticket != null ){
+        if(isAuthorized){
             Carrier carrier = carrierRepository.read(1);
             return cashRepository.transaction(ticket.getPrice(), cardNumber, carrier.getCardNumber());
-        } else{
-            new RuntimeException(" no ticket");
+        //} else{
+        //    new RuntimeException(" no ticket");
         }
-        return isAuthorized;  
+        //return isAuthorized; 
+        return false; 
     }
     
 
