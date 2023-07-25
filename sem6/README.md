@@ -1,18 +1,6 @@
-## Getting Started
+Разработать полную ERD домена приложения автоматизации работы поликлиники( в https://www.dbdesigner.net/).
+Разработать UseCase диаграмму пациента и доктора в приложении автоматизации работы поликлиники.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+(Задание со *) Скопировать себе в репозиторий шестигранную архитектуру и прокомментировать код(разобраться в нем).
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Решение сдается в всиде jpg файла залитого на GitHub.
