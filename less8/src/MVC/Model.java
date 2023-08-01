@@ -6,6 +6,12 @@ import java.util.List;
 
 public class Model {
     private final HashMap<Integer, Student> cache = new HashMap<>();
+    private List<Student> students;
+
+
+    public Model(List<Student> students) {
+        this.students = students;
+    }
 
     public void insertCache(List<Student> studentList) {
         for (Student student : studentList) {
@@ -27,6 +33,7 @@ public class Model {
     }
 
     public List<Student> getAllStudents() {
-        return new ArrayList<>(cache.values());
+        //return new ArrayList<>(cache.values());
+        return students;
     }
 }

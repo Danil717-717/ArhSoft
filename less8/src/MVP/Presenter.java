@@ -8,7 +8,7 @@ public class Presenter {
         this.model = model;
     }
 
-    public void attachView(ViewContract viewContract) {
+    public void attachView(View viewContract) {
         this.viewContract = viewContract;
     }
 

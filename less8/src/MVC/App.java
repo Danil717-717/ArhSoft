@@ -1,10 +1,7 @@
+package MVC;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import MVC.Controller;
-import MVC.Model;
-import MVC.Student;
-import MVC.View;
 
 public class App {
     public static void main(String[] args) throws Exception {

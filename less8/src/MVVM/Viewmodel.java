@@ -2,6 +2,8 @@ package MVVM;
 
 import java.util.List;
 
+import MVC.Student;
+
 public class Viewmodel {
     private final Model model = new Model();
     private final MutableLiveData<List<Student>> students = new MutableLiveData<>();

@@ -1,10 +1,9 @@
+package MVP;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import MVC.Controller;
-import MVC.Model;
 import MVC.Student;
-import MVC.View;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -25,12 +24,11 @@ public class App {
 
         //Создание модели
         Model mod = new Model(students);
-        //Создание view
-        View view = new View();
         //Создаем экземпляр контроллера
-        Controller controller = new Controller(mod, view);
+        Presenter presenter = new Presenter(mod);
 
         //запуск работы модели
-        controller.updateView();
+        presenter.loadStudents();
+        presenter.getLocalStudents();
     }
 }
