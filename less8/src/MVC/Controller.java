@@ -1,3 +1,7 @@
+package MVC;
+
+import java.util.List;
+
 public class Controller {
     private final Model model;
     private final View view;
