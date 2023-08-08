@@ -1,0 +1,213 @@
+openapi: 3.0.0
+info:
+  title: Заказ ресурсов на облаке
+  version: 0.0.1
+servers:
+  - url: https://localhost:8080/api/v1
+    description: Dev server
+paths:  
+  /clouds:
+    get:
+      summary: Метод получения списка ресурсов на облако
+      tags:
+        - Clouds
+      operationId: getAllClouds
+      responses:
+        "200":
+          description: Успешный ответ со списком ресурсов в облаке
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Clouds" 
+        "default":
+          description: Все остальное
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Error"    
+    post:
+      summary: Создание заказа на облако
+      tags:
+        - Clouds
+      operationId: CreateCloud
+      requestBody:
+        content:
+          adpication/json:
+            schema:
+              $ref: "#/components/schemas/Error"
+      responses:
+        "200":
+          description: Успешный ответ со списком ресурсов в облаке
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Clouds" 
+        "default":
+          description: Все остальное
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Error"   
+/clouds/{cloud_id}:
+  get:
+    summary: Метод получения заказа на облако по ID
+    tags:
+      -Clouds
+    operationID: getCloudByid
+    paarametrs:
+      -name: cloud_id
+      in: path
+      required: true
+      description: Индетификатор заказа облака
+      schema:
+        type:string
+      example: f102b515  
+    responses:
+        "200":
+          description: Успешный ответ со списком ресурсов в облаке
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Cloud"
+        "404":
+          description: Заказ с ID не найден
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Error"         
+        "default":
+          description: Все остальное
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Error"    
+  delete:
+    summary: Метод отмены заказа на облаке по ID
+    tags:
+      -Clouds
+    operationID: cancelCloudByid
+    paarametrs:
+      -name: cloud_id
+      in: path
+      required: true
+      description: Индетификатор заказа облака
+      schema:
+        type:string
+      example: f102b515  
+    responses:
+        "200":
+          description: Успешный ответ заказов облака по ID
+          content:
+            adplication/json:{}
+              
+        "404":
+          description: Заказ с ID не найден
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Error"  
+        "default":
+          description: Все остальное
+          content:
+            adplication/json:
+              schema:
+                $ref: "#/components/schemas/Error"   
+/user/createWithList:
+    post:
+      tags:
+        - user
+      summary: Создает список пользователей с заданным входным массивом
+      description: reates list of users with given input array
+      operationId: createUsersWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/User'
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+        "default":
+          description: successful operation              
+components:
+  schemas:
+    Cloud:
+      type: object
+      required:
+        - id_client
+        - OS
+        - RAM
+        - CPU
+        - HDD
+      properties:
+        cloud_id:
+          type: string
+          example: f102b515
+        id_client:
+           type: string
+           example: f102b515
+        OS:
+          type: string
+          enum:
+            - Win
+            - Mac
+            - Lin
+            - Andr
+          description: Операционная система сервера
+        RAM:
+          type: string
+          example: 128
+          description: Обьем оперативной памяти
+        CPU:
+          type: string
+          example: 8
+          description: Колличество ядер процессора 
+    Clouds:
+      type: array
+      items:
+        $ref: "#/components/schemas/Cloud"
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+        message:
+          type: string  
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: integer
+          example: 11
+        username:
+          type: string
+          example: theUser
+        firstName:
+          type: string
+          example: John
+        lastName:
+          type: string
+          example: James
+        pasHesh:
+          type: string
+          example: "12345"
+        phone:
+          type: string
+          example: "12345"
+        adress:
+          type: string
+          description: User adress
+          example: "Moscow"
